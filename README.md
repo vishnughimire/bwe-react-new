@@ -1,5 +1,29 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to run this project 
+
+Create `dev.js` file in `server/config/dev.js` with a content of:
+
+``` javascript 
+
+module.exports ={
+
+ DB_URI: 'your mongodb connection string, get from mongodb.com/cloud/atlas'
+ JWT_SECRET: 'someuniquevalue' //e.g 383ieuqAd@3!'
+}
+
+```
+in a base folder of project  `npm install` and then `npm start` to start dev server.
+
+To run api server go to `server` folder with a command `cd server` and run `node.js`
+
+## How to popoluate DB with default date
+
+In case your `dev.js`  file is created you can run in the `server` folder command to populate database `node fakeDB/cleanDB.js`
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
